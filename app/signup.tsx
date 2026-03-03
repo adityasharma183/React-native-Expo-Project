@@ -2,17 +2,17 @@ import { Text, View,StyleSheet } from "react-native";
 import { Link, useRouter } from "expo-router";
 import Button from "./components/Button";
 
-const  Index=() =>{
+const  Signup=() =>{
   const router=useRouter()
-  const handleContinue=()=>{
+  const handleSignup=()=>{
     router.navigate('/login')
     
   }
   return (
     
     <View style={styles.container}>
-      <Text style={styles.text}>adi here</Text>
-      <Button title={'Continue'} onPress={handleContinue}/>
+      
+      <Button title={'Login'} onPress={handleSignup}/>
       
     </View>
   );
@@ -20,10 +20,7 @@ const  Index=() =>{
 
 const styles=StyleSheet.create({
   container:{
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center',
-    backgroundColor:'green'
+    flex:1
 
   },
   text:{
@@ -34,6 +31,4 @@ const styles=StyleSheet.create({
 
 })
 
-export default Index
-
-
+export default Signup
